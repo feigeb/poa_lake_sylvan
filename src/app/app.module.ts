@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { SlideShowComponent } from './slide-show/slide-show.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SlideShowComponent
   ],
   imports: [
     BrowserModule,
