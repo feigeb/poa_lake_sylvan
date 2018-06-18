@@ -1,0 +1,29 @@
+ <div class="slide-show">  
+        <div id="slide-holder">
+            <div class="slide" *ngFor="let image of images">
+                <img [@flyInOut]="image.position" 
+                [src]='image.src'
+                [width]='imageWidth' 
+                [height]='imageHeight'/>
+            </div>
+        </div>
+    <div>
+        <img id="sizeImage" class="slider" [src]='images[0].src' [width]='imageWidth' [height]='imageHeight'/>
+    </div>
+    <div>
+        <div class="controls">
+            <a hreg="#" (click)="prev(true)">
+                <img [src]='buttons.left' [width]='buttonWidth' [height]='buttonHeight' />
+            </a>
+            <a hreg="#" (click)="next(true, true)" *ngIf='isShowStopped'>
+                <img [src]='buttons.play' [width]='buttonWidth' [height]='buttonHeight' />
+            </a>
+            <a hreg="#" (click)="stopCarousel()" *ngIf='!isShowStopped'>
+                <img [src]='buttons.pause' [width]='buttonWidth' [height]='buttonHeight' />
+            </a>
+            <a hreg="#" (click)="next(true)">
+            <img [src]='buttons.right' [width]='buttonWidth' [height]='buttonHeight' />
+            </a>
+        </div>
+    </div>
+ </div>
