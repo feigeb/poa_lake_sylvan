@@ -12,24 +12,24 @@ import {trigger, state, style, transition, animate} from '@angular/animations';
       state('center', style({transform: 'translateX(0)'})),
       state('right', style({transform: 'translateX(100%)'})),
       transition('left => center', [
-        style({transform: 'translateX(-100%)'}),
+        style({transform: 'translateX(-105%)'}),
         animate(1000)
       ]),
       transition('center => right', [
-        animate(1000, style({transform: 'translateX(100%)'}))
+        animate(1000, style({transform: 'translateX(105%)'}))
       ]),
       transition('right => center', [
-        style({transform: 'translateX(100%)'}),
+        style({transform: 'translateX(105%)'}),
         animate(1000)
       ]),
       transition('center => left', [
-        animate(1000, style({transform: 'translateX(-100%)'}))
+        animate(1000, style({transform: 'translateX(-105%)'}))
       ]),
       transition('right => left', [
-        style({transform: 'translateX(100%)'}),
+        style({transform: 'translateX(105%)'}),
       ]),
       transition('left => right', [
-        style({transform: 'translateX(100%)'}),
+        style({transform: 'translateX(105%)'}),
       ])
     ])
   ]
