@@ -9,10 +9,8 @@
     </div>
 </div>
 <div>
-    <img id="sizeImage" class="slider" [src]='images[0].src' [width]='imageWidth' [height]='imageHeight'/>
-</div>
-<div>
     <div class="controls">
+        <img id="sizeImage" class="slider" [src]='images[0].src' [width]='imageWidth' [height]='imageHeight'/>
         <a class="buttonLeft" hreg="#" (click)="prev(true)">
             <img [src]='buttons.left' [width]='buttonWidth' [height]='buttonHeight' />
         </a>
@@ -23,7 +21,7 @@
             <img [src]='buttons.pause' [width]='buttonWidth' [height]='buttonHeight' />
         </a>
         <a class="burronRight" hreg="#" (click)="next(true)">
-        <img [src]='buttons.right' [width]='buttonWidth' [height]='buttonHeight' />
+            <img [src]='buttons.right' [width]='buttonWidth' [height]='buttonHeight' />
         </a>
     </div>
 </div>

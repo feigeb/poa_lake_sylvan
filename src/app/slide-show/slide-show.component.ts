@@ -51,10 +51,10 @@ export class SlideShowComponent implements OnInit {
 
   constructor() { 
     this.buttons = {
-      left: 'assets/images/left-arrow.png',
-      right: 'assets/images/right-arrow.png',
-      play: 'assets/images/play.png',
-      pause: 'assets/images/pause.png',
+      left: 'assets/images/circle/left-arrow.png',
+      right: 'assets/images/circle/right-arrow.png',
+      play: 'assets/images/circle/play.png',
+      pause: 'assets/images/circle/pause.png',
     };
 
     this.images = [{
@@ -75,6 +75,31 @@ export class SlideShowComponent implements OnInit {
     },{
       src: 'assets/images/pic4.JPG',
       title: 'Pic 4',
+      visible: false,
+      position: 'left'
+    },{
+      src: 'assets/images/pic5.JPG',
+      title: 'Pic 5',
+      visible: false,
+      position: 'left'
+    },{
+      src: 'assets/images/pic6.JPG',
+      title: 'Pic 6',
+      visible: false,
+      position: 'left'
+    },{
+      src: 'assets/images/pic7.JPG',
+      title: 'Pic 7',
+      visible: false,
+      position: 'left'
+    },{
+      src: 'assets/images/pic8.JPG',
+      title: 'Pic 8',
+      visible: false,
+      position: 'left'
+    },{
+      src: 'assets/images/pic9.JPG',
+      title: 'Pic 9',
       visible: false,
       position: 'left'
     }];
