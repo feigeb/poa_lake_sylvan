@@ -13,17 +13,17 @@ import {trigger, state, style, transition, animate} from '@angular/animations';
       state('right', style({transform: 'translateX(100%)'})),
       transition('left => center', [
         style({transform: 'translateX(-105%)'}),
-        animate(1000)
+        animate(700)
       ]),
       transition('center => right', [
-        animate(1000, style({transform: 'translateX(105%)'}))
+        animate(700, style({transform: 'translateX(105%)'}))
       ]),
       transition('right => center', [
         style({transform: 'translateX(105%)'}),
-        animate(1000)
+        animate(700)
       ]),
       transition('center => left', [
-        animate(1000, style({transform: 'translateX(-105%)'}))
+        animate(700, style({transform: 'translateX(-105%)'}))
       ]),
       transition('right => left', [
         style({transform: 'translateX(105%)'}),
@@ -45,60 +45,60 @@ export class SlideShowComponent implements OnInit {
   buttonWidth: number = 30;
   buttonHeight: number = 30;
   interval;
-  interalMilSec: number = 5000; //5 seconds
+  interalMilSec: number = 2000; //5 seconds
   isShowStopped: boolean = false;
   menuState:string = 'forward';
 
   constructor() { 
     this.buttons = {
-      left: 'assets/images/circle/left-arrow.png',
-      right: 'assets/images/circle/right-arrow.png',
-      play: 'assets/images/circle/play.png',
-      pause: 'assets/images/circle/pause.png',
+      left: 'assets/images/buttons/left-arrow.png',
+      right: 'assets/images/buttons/right-arrow.png',
+      play: 'assets/images/buttons/play.png',
+      pause: 'assets/images/buttons/pause.png',
     };
 
     this.images = [{
-      src: 'assets/images/pic1.JPG',
+      src: 'assets/images/slides/pic1.JPG',
       title: 'Pic 1',
       visible: true,
       position: 'center'
     },{
-      src: 'assets/images/pic2.JPG',
+      src: 'assets/images/slides/pic2.JPG',
       title: 'Pic 2',
       visible: false,
       position: 'left'
     },{
-      src: 'assets/images/pic3.JPG',
+      src: 'assets/images/slides/pic3.JPG',
       title: 'Pic 3',
       visible: false,
       position: 'left'
     },{
-      src: 'assets/images/pic4.JPG',
+      src: 'assets/images/slides/pic4.JPG',
       title: 'Pic 4',
       visible: false,
       position: 'left'
     },{
-      src: 'assets/images/pic5.JPG',
+      src: 'assets/images/slides/pic5.JPG',
       title: 'Pic 5',
       visible: false,
       position: 'left'
     },{
-      src: 'assets/images/pic6.JPG',
+      src: 'assets/images/slides/pic6.JPG',
       title: 'Pic 6',
       visible: false,
       position: 'left'
     },{
-      src: 'assets/images/pic7.JPG',
+      src: 'assets/images/slides/pic7.JPG',
       title: 'Pic 7',
       visible: false,
       position: 'left'
     },{
-      src: 'assets/images/pic8.JPG',
+      src: 'assets/images/slides/pic8.JPG',
       title: 'Pic 8',
       visible: false,
       position: 'left'
     },{
-      src: 'assets/images/pic9.JPG',
+      src: 'assets/images/slides/pic9.JPG',
       title: 'Pic 9',
       visible: false,
       position: 'left'
@@ -152,7 +152,7 @@ export class SlideShowComponent implements OnInit {
 
   autoPlay = function() {
     this.next(false);
-    this.updateDisplayedImage();
+    //this.updateDisplayedImage();
   }
 
   startCarousel = function() {
