@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { SlideShowComponent } from './slide-show/slide-show.component';
+import { HeaderAndAlertsComponent } from './header-and-alerts/header-and-alerts.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SlideShowComponent
+    SlideShowComponent,
+    HeaderAndAlertsComponent
   ],
   imports: [
     BrowserModule,
