@@ -45,7 +45,7 @@ export class SlideShowComponent implements OnInit {
   buttonWidth: number = 30;
   buttonHeight: number = 30;
   interval;
-  interalMilSec: number = 2000; //5 seconds
+  interalMilSec: number = 5000; //5 seconds
   isShowStopped: boolean = false;
   menuState:string = 'forward';
 
@@ -152,7 +152,6 @@ export class SlideShowComponent implements OnInit {
 
   autoPlay = function() {
     this.next(false);
-    //this.updateDisplayedImage();
   }
 
   startCarousel = function() {
