@@ -82,26 +82,6 @@ export class SlideShowComponent implements OnInit {
       title: 'Pic 5',
       visible: false,
       position: 'left'
-    },{
-      src: 'assets/images/slides/pic6.JPG',
-      title: 'Pic 6',
-      visible: false,
-      position: 'left'
-    },{
-      src: 'assets/images/slides/pic7.JPG',
-      title: 'Pic 7',
-      visible: false,
-      position: 'left'
-    },{
-      src: 'assets/images/slides/pic8.JPG',
-      title: 'Pic 8',
-      visible: false,
-      position: 'left'
-    },{
-      src: 'assets/images/slides/pic9.JPG',
-      title: 'Pic 9',
-      visible: false,
-      position: 'left'
     }];
 
     this.startCarousel();
