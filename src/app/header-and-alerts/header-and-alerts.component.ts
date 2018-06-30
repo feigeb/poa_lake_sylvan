@@ -8,18 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderAndAlertsComponent implements OnInit {
 
   header: object;
-  warningMessage: string;
+  message: string;
+  isWarning: boolean;
 
   constructor() { 
     this.header = {
       url: 'assets/images/header.JPG',
       display: true,
     };
+    this.isWarning = false;
   }
 
   ngOnInit() {
-    this.setWarningMessage("WARNING: Algal Toxins Levels Are At An Unsave Level For The Lake. " + 
-    "Updated Tests Results Are Expected The Week Of July 1st")
+    this.setWarningMessage("Alert: Lake water is safe again :)  Continue to avoid water that looks like " + 
+    "spilled paint, has scumms, has mats, has films, is discolored, has colored streaks or has " + 
+    "green globs floating below the surface")
   }
 
   setHeaderImageDisplay(isDisplayed) {
@@ -27,11 +30,11 @@ export class HeaderAndAlertsComponent implements OnInit {
   }
 
   setWarningMessage(message){
-    this.warningMessage = message;
+    this.message = message;
   }
 
   dismissWarning(){
-    this.warningMessage = undefined;
+    this.message = undefined;
   }
 
 }
