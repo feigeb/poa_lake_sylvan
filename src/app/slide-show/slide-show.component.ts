@@ -135,10 +135,12 @@ export class SlideShowComponent implements OnInit {
   }
 
   startCarousel = function() {
-    this.interval = setInterval (() => {
-    this.autoPlay();
-    }, this.interalMilSec)
-    this.isShowStopped = false;
+    try {
+      this.interval = setInterval (() => {
+        this.autoPlay();
+        }, this.interalMilSec)
+        this.isShowStopped = false;
+    } catch (error) {}
   }
 
   stopCarousel = function() {
