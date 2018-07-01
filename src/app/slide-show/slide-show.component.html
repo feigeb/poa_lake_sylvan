@@ -20,7 +20,7 @@
         <a class="buttonCenter" hreg="#" (click)="stopCarousel()" *ngIf='!isShowStopped'>
             <img [src]='buttons.pause' [width]='buttonWidth' [height]='buttonHeight' />
         </a>
-        <a class="burronRight" hreg="#" (click)="next(true)">
+        <a class="burronRight" hreg="#" (click)="next(true, null)">
             <img [src]='buttons.right' [width]='buttonWidth' [height]='buttonHeight' />
         </a>
     </div>

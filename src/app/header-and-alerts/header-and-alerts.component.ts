@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderAndAlertsComponent implements OnInit {
 
-  header: object;
+  header: any;
   message: string;
   isWarning: boolean;
 
