@@ -37,7 +37,7 @@ import {trigger, state, style, transition, animate} from '@angular/animations';
 
 export class SlideShowComponent implements OnInit {
   images: any[];
-  buttons: object;
+  buttons: any;
   currentIndex: number = 0;
   priorIndex: number = 0;
   imageWidth: number = 377;
